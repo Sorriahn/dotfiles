@@ -1,7 +1,7 @@
 # Dotfiles
 Minimal configuration made for Arch linux using MangoWM.
 
-![screenshot](~/screenshot.png)
+![Screenshot](screenshot.png)
 
 ## Main Programs
 - MangoWM
