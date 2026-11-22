@@ -1,0 +1,41 @@
+/* ~/.config/mangobar/style.css — minimal, colors pulled from the crane wallpaper */
+
+@define-color bg      #161616;    /* near-black grey, solid */
+@define-color fg      #C8C8C8;    /* light grey text */
+@define-color dim     #6E6E6E;    /* inactive tags */
+@define-color accent  #E8B04A;    /* the lit cab window */
+@define-color urgent  #D0645A;    /* the red beacon */
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: normal;
+}
+
+* {
+    color: @fg;
+    background: @bg;   /* every module paints its own bg; #bar only fills the gap */
+    padding: 0px 8px;
+    margin: 0px;
+    border-radius: 0;
+}
+
+#bar,
+#bar.sel {
+    background: @bg;
+    margin: 0px;
+    padding: 0px 4px;
+}
+
+/* Tags: only the focused one stands out */
+#tags          { padding: 0px 7px; color: @dim; }
+#tags.occupied { color: @fg; }
+#tags.active   { color: @accent; }
+#tags.urgent   { color: @urgent; }
+#tags:hover    { color: @fg; }
+
+#title { color: @fg; }
+
+#network.disconnected { color: @urgent; }
+
+#clock { color: @fg; padding-right: 10px; }

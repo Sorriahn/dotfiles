@@ -1,0 +1,40 @@
+{
+    "layer": "top",
+    "height": 26,
+    "sys-interval": 5,
+    "modules-left": ["workspaces", "window"],
+    "modules-center": [],
+    "modules-right": ["network", "backlight", "pulseaudio", "battery", "clock"],
+    "workspaces": {
+        "hide-empty": true,
+        "on-click": "activate",
+        "on-click-right": "toggle"
+    },
+    "window": {
+        "format": "{}",
+        "max-length": 600
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "{ssid}",
+        "format-disconnected": "offline",
+        "format-alt": "{ipaddr}"
+    },
+    "backlight": {
+        "format": "bri {percent}%",
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-"
+    },
+    "pulseaudio": {
+        "format": "vol {volume}%",
+        "format-muted": "muted",
+        "scroll-step": 5,
+        "max-volume": 100
+    },
+    "battery": {
+        "format": "bat {percent}%"
+    },
+    "clock": {
+        "format": "{:%a %b %d  %H:%M}"
+    }
+}
