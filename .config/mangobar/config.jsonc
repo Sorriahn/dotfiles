@@ -35,6 +35,6 @@
         "format": "bat {percent}%"
     },
     "clock": {
-        "format": "{:%a %b %d  %H:%M}"
+        "format": "{%a %b %d  %H:%M}"
     }
 }
